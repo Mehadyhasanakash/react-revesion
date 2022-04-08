@@ -8,7 +8,15 @@ const Resturant = () => {
     const [menuDatas, setMenuData] = useState(Menu)
     return (
         <>
-        <ResturantCard menu={menuDatas}></ResturantCard> 
+              <div className='main-card--cointainer'>
+              {
+                    menuDatas.map(menu=> <ResturantCard
+                    key={menu.id}
+                    menu={menu}
+                    
+                    ></ResturantCard>)
+                }
+              </div>
         </>
     );
 };

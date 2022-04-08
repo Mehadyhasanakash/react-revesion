@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ResturantCard = ({menu}) => {
-    console.log(menu)
+    
     return (
         <>
          <div className='card-container'>
